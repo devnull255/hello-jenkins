@@ -7,6 +7,8 @@ app.get('/',function (req,res) {
   res.send('hello, this is a sample app from node');
 });
 
+app.use(express.static(__dirname + '/public'));
+
 app.listen(process.env.PORT || 5000);
 
 module.exports = app;
