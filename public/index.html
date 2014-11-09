@@ -1,6 +1,37 @@
-<html>
-<head><title>App Index page</title></head>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <title>App Index page</title>
+      <link rel="stylesheet" href="style.css" media="screen">
+      <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.1/dijit/themes/claro/claro.css" media="screen">
+</head>
+
 <body>
-Welcome to the App Index page.
+        <div id="appLayout" class="demoLayout">
+            <div class="centerPanel">
+                <div>
+                    <h4>Group 1 Content</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div>
+                    <h4>Group 2 Content</h4>
+                </div>
+                <div>
+                    <h4>Group 3 Content</h4>
+                </div>
+            </div>
+ 
+            <div class="edgePanel">Header content (top)</div>
+            <div id="leftCol" class="edgePanel">Sidebar content (left)</div>
+        </div>
+        <!-- load dojo and provide config via data attribute -->
+        <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.1/dojo/dojo.js"
+                data-dojo-config="async: 1, parseOnLoad: 1">
+        </script>
+<script>
+    require(["dojo/parser", "dijit/layout/BorderContainer", "dijit/layout/TabContainer",
+        "dijit/layout/ContentPane"]);
+</script>
 </body>
 </html>
