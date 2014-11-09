@@ -1,3 +1,4 @@
+#had to create a synlink called node to point to nodejs
 var express = require('express');
 
 var app = express();
