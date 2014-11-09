@@ -1,4 +1,4 @@
 #!/bin/sh
-
+#updated my test script to make this file dirty to git
 ./node_modules/.bin/mocha ./test/test.js
 
